@@ -34,15 +34,15 @@ const item = {
 };
 
 export const Header = () => {
-  const [slide, setSlide] = useState<string | null>(null);
+  const [slide, setSlide] = useState<number>(0);
   console.log(slide);
 
   return (
     <header className={headerStyle.header}>
       <main>
-        {slide == "4" && (
+        {slide === 0 && (
           <div className={headerStyle.item}>
-            <img src={img1} alt="picture" className={headerStyle.img} />
+            <img src={img3} alt="picture" className={headerStyle.img} />
             <motion.div
               className={headerStyle.content}
               key="item"
@@ -66,7 +66,7 @@ export const Header = () => {
           </div>
         )}
 
-        {slide == "0" && (
+        {slide === 1 && (
           <div className={headerStyle.item}>
             <img src={img2} alt="picture" className={headerStyle.img} />
             <motion.div
@@ -91,7 +91,7 @@ export const Header = () => {
           </div>
         )}
 
-        {slide == "1" && (
+        {slide === 2 && (
           <div className={headerStyle.item}>
             <img src={img3} alt="picture" className={headerStyle.img} />
             <motion.div
@@ -116,9 +116,9 @@ export const Header = () => {
           </div>
         )}
 
-        {slide == "2" && (
+        {slide === 3 && (
           <div className={headerStyle.item}>
-            <img src={img3} alt="picture" className={headerStyle.img} />
+            <img src={img1} alt="picture" className={headerStyle.img} />
             <motion.div
               className={headerStyle.content}
               variants={animateContainer}
@@ -141,9 +141,9 @@ export const Header = () => {
           </div>
         )}
 
-        {slide == "3" && (
+        {slide === 4 && (
           <div className={headerStyle.item}>
-            <img src={img3} alt="picture" className={headerStyle.img} />
+            <img src={img2} alt="picture" className={headerStyle.img} />
             <motion.div
               className={headerStyle.content}
               variants={animateContainer}
@@ -176,16 +176,27 @@ export const Header = () => {
             speed={1000}
             autoplay={{ delay: 2500 }}
             spaceBetween={50}
-            // onSlideChange={(event) => console.log(event.slides)}
-            onSlideChange={(event) => {
-              {
-                event.slides.map((ele) => {
-                  setSlide(ele.getAttribute("data-swiper-slide-index"));
-                });
-              }
+            onActiveIndexChange={(swiper) => {
+              setSlide(swiper.realIndex);
             }}
             className={headerStyle.slider}
           >
+            <SwiperSlide className={headerStyle.slider_item}>
+              <img src={img2} alt="image" className={`${headerStyle.img} `} />
+              <div className={headerStyle.slider_content}>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={headerStyle.slider_item}>
+              <img src={img3} alt="image" className={headerStyle.img} />
+              <div className={headerStyle.slider_content}>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide className={headerStyle.slider_item}>
               <img src={img1} alt="image" className={headerStyle.img} />
               <div className={headerStyle.slider_content}>
@@ -196,22 +207,6 @@ export const Header = () => {
 
             <SwiperSlide className={headerStyle.slider_item}>
               <img src={img2} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img3} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img3} alt="image" className={headerStyle.img} />
               <div className={headerStyle.slider_content}>
                 <h1>Title</h1>
                 <p>Lorem ipsum dolor sit amet</p>
