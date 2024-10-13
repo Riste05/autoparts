@@ -1,4 +1,7 @@
 .header {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
   position: relative;
   width: 100vw;
   height: 100vh;

@@ -9,32 +9,32 @@ import sopiranje from "./image/sopiranje.jpg";
 
 export const CategoryParts = () => {
   return (
-    <section className={categoryStyle.section}>
+    <section>
       <div className={categoryStyle.container}>
         <h1 className={categoryStyle.text}>Kategorii na avto delovi</h1>
         <div className={categoryStyle.category}>
           <div className={categoryStyle.item}>
-            <img src={sopiranje} alt="" />
+            <img src={sopiranje} alt="image" />
             <p>Sistem za sopiranje</p>
           </div>
           <div className={categoryStyle.item}>
-            <img src={filtri} alt="" />
+            <img src={filtri} alt="image" />
             <p>Filtri</p>
           </div>
           <div className={categoryStyle.item}>
-            <img src={kais} alt="" />
+            <img src={kais} alt="image" />
             <p>Kais</p>
           </div>
           <div className={categoryStyle.item}>
-            <img src={menuvac} alt="" />
+            <img src={menuvac} alt="image" />
             <p>Menuvac</p>
           </div>
           <div className={categoryStyle.item}>
-            <img src={amortizeri} alt="" />
+            <img src={amortizeri} alt="image" />
             <p>Amortizeri</p>
           </div>
           <div className={categoryStyle.item}>
-            <img src={maslo} alt="" />
+            <img src={maslo} alt="image" />
             <p>Maslo</p>
           </div>
         </div>

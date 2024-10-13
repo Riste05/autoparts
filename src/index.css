@@ -3,6 +3,7 @@
 :root {
     --maincol: #f3f3f3 ;
     --whitecol: #fff ;
+    --box-shadow: rgba(0,0,0,.5);
 }
 
 * {
@@ -15,4 +16,5 @@ body {
     font-family: Poppins;
     overflow-x: hidden;
 }
+
 

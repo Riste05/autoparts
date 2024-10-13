@@ -1,7 +1,8 @@
 .container {
-    width: 100% ;
+    width: 100%;
     max-width: 1700px;
-    padding: 100px 50px 0;
+    margin: 0 auto;
+    padding: 80px 50px;
     background-color: var(--maincol) ;
 }
 
@@ -25,6 +26,7 @@
     background-color: var(--whitecol) ;
     border-radius: 5px ;
     cursor: pointer ;
+    box-shadow: 0 5px 10px var(--box-shadow);
 }
 
 img {
