@@ -6,9 +6,9 @@ import "swiper/css";
 
 import headerStyle from "./header.module.css";
 
-import img1 from "../../image/img1.jpg";
-import img2 from "../../image/img2.webp";
-import img3 from "../../image/img3.webp";
+import img1 from "./image/img1.webp";
+import img2 from "./image/img2.webp";
+import img3 from "./image/img3.jpg";
 import { useState } from "react";
 
 const animateContainer = {
@@ -35,7 +35,6 @@ const item = {
 
 export const Header = () => {
   const [slide, setSlide] = useState<number>(0);
-  console.log(slide);
 
   return (
     <header className={headerStyle.header}>

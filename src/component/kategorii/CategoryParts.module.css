@@ -1,0 +1,42 @@
+.container {
+    width: 100% ;
+    max-width: 1700px;
+    padding: 100px 50px 0;
+    background-color: var(--maincol) ;
+}
+
+.text {
+    text-align: center ;
+    margin-bottom: 50px ;
+    font-size: 50px ;
+} 
+
+.category {
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px ;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 50px ;
+    background-color: var(--whitecol) ;
+    border-radius: 5px ;
+    cursor: pointer ;
+}
+
+img {
+    transition: all 500ms ease;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+
+.item p {
+    margin: 50px 0 ;
+    font-size: 18px ;
+}
