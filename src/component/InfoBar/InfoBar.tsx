@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import barStyle from "./infoBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,11 +12,9 @@ import {
 
 import { animateContainer } from "../header/Header";
 
-import { motion } from "framer-motion";
-
 const item = {
   hidden: { opacity: 0, x: -100 },
-  show: { opacity: 1, x: 0 },
+  show: { opacity: 1, x: 0, transition: { type: "spring" } },
 };
 
 export const InfoBar = () => {

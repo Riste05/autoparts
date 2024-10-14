@@ -14,7 +14,7 @@ import { useState } from "react";
 export const animateContainer = {
   show: {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -33,8 +33,8 @@ export const Header = () => {
   const [slide, setSlide] = useState<number>(0);
 
   return (
-    <header className={headerStyle.header}>
-      <main>
+    <header>
+      <main className={headerStyle.container}>
         {slide === 0 && (
           <div className={headerStyle.item}>
             <img src={img3} alt="picture" className={headerStyle.img} />
@@ -169,7 +169,7 @@ export const Header = () => {
             loop={true}
             slidesPerView={3.5}
             speed={1000}
-            autoplay={{ delay: 4000 }}
+            // autoplay={{ delay: 4000 }}
             spaceBetween={50}
             onActiveIndexChange={(swiper) => {
               setSlide(swiper.realIndex);
@@ -177,7 +177,7 @@ export const Header = () => {
             className={headerStyle.slider}
           >
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img2} alt="image" className={`${headerStyle.img} `} />
+              <img src={img2} alt="image" className={headerStyle.img} />
               <div className={headerStyle.slider_content}>
                 <h1>Title</h1>
                 <p>Lorem ipsum dolor sit amet</p>

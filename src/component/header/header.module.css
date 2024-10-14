@@ -1,17 +1,10 @@
-.header {
+.container {
   width: 100%;
   max-width: 1700px;
   margin: 0 auto;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.item {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0 0 0 0;
+  overflow: hidden;
 }
 
 .img {
@@ -21,8 +14,8 @@
 }
 
 .content {
-  color: #fff;
   position: absolute;
+  color: #fff;
   top: 25%;
   padding: 0 50px;
   width: 800px;
@@ -66,8 +59,8 @@
 .slider {
   width: 100%;
   position: absolute;
-  bottom: 10px;
-  height: 200px;
+  bottom: 20px;
+  height: 100px;
 }
 
 .slider_item {
@@ -77,8 +70,12 @@
 
 .slider_content {
   position: absolute;
-  padding: 0 15px;
-  bottom: 15px;
+  bottom: 0;
+  right: 0 ;
+  left: 0 ;
+  text-align: center;
+  background-color: rgb(86, 61, 61,.6);
+  color: var(--maincol)
 }
 
 .slider_content h1 {
@@ -87,5 +84,5 @@
 
 .slider_content p {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 500;
 }

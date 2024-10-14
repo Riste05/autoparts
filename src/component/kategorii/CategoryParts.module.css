@@ -1,9 +1,12 @@
+.section {
+    padding: 80px 50px;
+    background-color: var(--maincol);
+}
+
 .container {
     width: 100%;
     max-width: 1700px;
-    margin: 0 auto;
-    padding: 80px 50px;
-    background-color: var(--maincol) ;
+    margin: 0 auto 50px ;
 }
 
 .text {
@@ -16,6 +19,7 @@
     display: grid ;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px ;
+    margin-bottom: 15px ;
 }
 
 .item {
@@ -37,8 +41,26 @@ img {
     transform: scale(1.2);
 }
 
-
 .item p {
     margin: 50px 0 ;
     font-size: 18px ;
+}
+
+.btn {
+    text-align: center ;
+}
+
+.btn button {
+    border: none ;
+    padding: 20px 85px ;
+    background-color: var(--whitecol);
+    font-size: 22px ;
+    cursor: pointer;
+    border-radius: 5px ;
+    font-weight: 600;
+    transition: all 500ms ease ;
+}
+
+.btn button:hover {
+    background-color: cadetblue;
 }
