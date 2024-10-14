@@ -11,15 +11,12 @@ import img2 from "./image/img2.webp";
 import img3 from "./image/img3.jpg";
 import { useState } from "react";
 
-const animateContainer = {
-  hidden: { opacity: 0 },
+export const animateContainer = {
   show: {
-    opacity: 1,
     transition: {
-      staggerChildren: 0.6,
+      staggerChildren: 0.3,
     },
   },
-  // exit: { opacity: 0 },
 };
 
 const item = {
@@ -28,9 +25,8 @@ const item = {
     opacity: 1,
     y: 0,
     filter: "blur(0)",
-    transition: { duration: 1 },
+    transition: { duration: 0.8 },
   },
-  // exit: { opacity: 0, y: -70, filter: "blur(10px)" },
 };
 
 export const Header = () => {
@@ -173,7 +169,7 @@ export const Header = () => {
             loop={true}
             slidesPerView={3.5}
             speed={1000}
-            autoplay={{ delay: 2500 }}
+            autoplay={{ delay: 4000 }}
             spaceBetween={50}
             onActiveIndexChange={(swiper) => {
               setSlide(swiper.realIndex);
