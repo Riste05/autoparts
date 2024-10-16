@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import headerStyle from "../../header/header.module.css";
 import { animateContainer } from "../customAnimation/customAnimation";
-import { headerItem } from "../customAnimation/customAnimation";
+import { animateHeaderItem } from "../customAnimation/customAnimation";
 
 type SliderProps = {
   img: string;
@@ -29,13 +29,13 @@ export const SliderComponent = ({
         initial="hidden"
         animate="show"
       >
-        <motion.h1 variants={headerItem}>
+        <motion.h1 variants={animateHeaderItem}>
           {mainText}
           <br />
           <span> {span}</span>
         </motion.h1>
-        <motion.p variants={headerItem}>{text}</motion.p>
-        <motion.button className={headerStyle.btn} variants={headerItem}>
+        <motion.p variants={animateHeaderItem}>{text}</motion.p>
+        <motion.button className={headerStyle.btn} variants={animateHeaderItem}>
           {btn}
         </motion.button>
       </motion.div>

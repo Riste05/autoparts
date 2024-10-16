@@ -84,7 +84,7 @@ export const Header = () => {
         )}
 
         {/* //////////////////////////////////////////// */}
-
+        {/* SWIPER */}
         <div className={headerStyle.wrapper}>
           <Swiper
             modules={[Autoplay]}

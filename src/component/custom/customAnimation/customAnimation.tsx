@@ -6,7 +6,7 @@ export const animateContainer = {
   },
 };
 
-export const headerItem = {
+export const animateHeaderItem = {
   hidden: { opacity: 0, y: 70, filter: "blur(10px)" },
   show: {
     opacity: 1,
