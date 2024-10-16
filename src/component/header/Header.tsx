@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -6,28 +6,11 @@ import "swiper/css";
 
 import headerStyle from "./header.module.css";
 
-import img1 from "./image/img1.webp";
-import img2 from "./image/img2.webp";
-import img3 from "./image/img3.jpg";
-import { useState } from "react";
+import { SliderComponent } from "../custom/customSlider/SliderComponent";
 
-export const animateContainer = {
-  show: {
-    transition: {
-      staggerChildren: 0.4,
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 70, filter: "blur(10px)" },
-  show: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0)",
-    transition: { duration: 0.8 },
-  },
-};
+import img1 from "../header/image/img1.webp";
+import img2 from "../header/image/img2.webp";
+import img3 from "../header/image/img3.jpg";
 
 export const Header = () => {
   const [slide, setSlide] = useState<number>(0);
@@ -36,129 +19,68 @@ export const Header = () => {
     <header>
       <main className={headerStyle.container}>
         {slide === 0 && (
-          <div className={headerStyle.item}>
-            <img src={img3} alt="picture" className={headerStyle.img} />
-            <motion.div
-              className={headerStyle.content}
-              key="item"
-              variants={animateContainer}
-              initial="hidden"
-              animate="show"
-            >
-              <motion.h1 variants={item}>
-                SE ZA VASIOT <span>AVTOMOBIL 1</span>
-              </motion.h1>
-              <motion.p variants={item}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                possimus dolore, labore eaque culpa laudantium debitis itaque
-                eos fugit, autem nostrum sed, maiores necessitatibus ipsam
-                cupiditate totam accusamus sint neque.
-              </motion.p>
-              <motion.button className={headerStyle.btn} variants={item}>
-                POVEKJE
-              </motion.button>
-            </motion.div>
-          </div>
+          <SliderComponent
+            img={img3}
+            mainText="Se za vasiot"
+            span="avtomobil 1"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        possimus dolore, labore eaque culpa laudantium debitis itaque
+        eos fugit, autem nostrum sed, maiores necessitatibus ipsam
+        cupiditate totam accusamus sint neque."
+            btn="Povekje"
+          />
         )}
 
         {slide === 1 && (
-          <div className={headerStyle.item}>
-            <img src={img2} alt="picture" className={headerStyle.img} />
-            <motion.div
-              className={headerStyle.content}
-              variants={animateContainer}
-              initial="hidden"
-              animate="show"
-            >
-              <motion.h1 variants={item}>
-                SE ZA VASIOT <span>AVTOMOBIL 2</span>
-              </motion.h1>
-              <motion.p variants={item}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                possimus dolore, labore eaque culpa laudantium debitis itaque
-                eos fugit, autem nostrum sed, maiores necessitatibus ipsam
-                cupiditate totam accusamus sint neque.
-              </motion.p>
-              <motion.button className={headerStyle.btn} variants={item}>
-                POVEKJE
-              </motion.button>
-            </motion.div>
-          </div>
+          <SliderComponent
+            img={img2}
+            mainText="Se za vasiot"
+            span="avtomobil 2"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        possimus dolore, labore eaque culpa laudantium debitis itaque
+        eos fugit, autem nostrum sed, maiores necessitatibus ipsam
+        cupiditate totam accusamus sint neque."
+            btn="Povekje"
+          />
         )}
 
         {slide === 2 && (
-          <div className={headerStyle.item}>
-            <img src={img3} alt="picture" className={headerStyle.img} />
-            <motion.div
-              className={headerStyle.content}
-              variants={animateContainer}
-              initial="hidden"
-              animate="show"
-            >
-              <motion.h1 variants={item}>
-                SE ZA VASIOT <span>AVTOMOBIL 3</span>
-              </motion.h1>
-              <motion.p variants={item}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                possimus dolore, labore eaque culpa laudantium debitis itaque
-                eos fugit, autem nostrum sed, maiores necessitatibus ipsam
-                cupiditate totam accusamus sint neque.
-              </motion.p>
-              <motion.button className={headerStyle.btn} variants={item}>
-                POVEKJE
-              </motion.button>
-            </motion.div>
-          </div>
+          <SliderComponent
+            img={img3}
+            mainText="Se za vasiot"
+            span="avtomobil 3"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        possimus dolore, labore eaque culpa laudantium debitis itaque
+        eos fugit, autem nostrum sed, maiores necessitatibus ipsam
+        cupiditate totam accusamus sint neque."
+            btn="Povekje"
+          />
         )}
 
         {slide === 3 && (
-          <div className={headerStyle.item}>
-            <img src={img1} alt="picture" className={headerStyle.img} />
-            <motion.div
-              className={headerStyle.content}
-              variants={animateContainer}
-              initial="hidden"
-              animate="show"
-            >
-              <motion.h1 variants={item}>
-                SE ZA VASIOT <span>AVTOMOBIL 4</span>
-              </motion.h1>
-              <motion.p variants={item}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                possimus dolore, labore eaque culpa laudantium debitis itaque
-                eos fugit, autem nostrum sed, maiores necessitatibus ipsam
-                cupiditate totam accusamus sint neque.
-              </motion.p>
-              <motion.button className={headerStyle.btn} variants={item}>
-                POVEKJE
-              </motion.button>
-            </motion.div>
-          </div>
+          <SliderComponent
+            img={img1}
+            mainText="Se za vasiot"
+            span="avtomobil 4"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        possimus dolore, labore eaque culpa laudantium debitis itaque
+        eos fugit, autem nostrum sed, maiores necessitatibus ipsam
+        cupiditate totam accusamus sint neque."
+            btn="Povekje"
+          />
         )}
 
         {slide === 4 && (
-          <div className={headerStyle.item}>
-            <img src={img2} alt="picture" className={headerStyle.img} />
-            <motion.div
-              className={headerStyle.content}
-              variants={animateContainer}
-              initial="hidden"
-              animate="show"
-            >
-              <motion.h1 variants={item}>
-                SE ZA VASIOT <span>AVTOMOBIL 5</span>
-              </motion.h1>
-              <motion.p variants={item}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                possimus dolore, labore eaque culpa laudantium debitis itaque
-                eos fugit, autem nostrum sed, maiores necessitatibus ipsam
-                cupiditate totam accusamus sint neque.
-              </motion.p>
-              <motion.button className={headerStyle.btn} variants={item}>
-                POVEKJE
-              </motion.button>
-            </motion.div>
-          </div>
+          <SliderComponent
+            img={img2}
+            mainText="Se za vasiot"
+            span="avtomobil 5"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        possimus dolore, labore eaque culpa laudantium debitis itaque
+        eos fugit, autem nostrum sed, maiores necessitatibus ipsam
+        cupiditate totam accusamus sint neque."
+            btn="Povekje"
+          />
         )}
 
         {/* //////////////////////////////////////////// */}
@@ -169,7 +91,7 @@ export const Header = () => {
             loop={true}
             slidesPerView={3.5}
             speed={1000}
-            // autoplay={{ delay: 4000 }}
+            autoplay={{ delay: 4000 }}
             spaceBetween={50}
             onActiveIndexChange={(swiper) => {
               setSlide(swiper.realIndex);
