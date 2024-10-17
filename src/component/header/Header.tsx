@@ -7,6 +7,7 @@ import "swiper/css";
 import headerStyle from "./header.module.css";
 
 import { SliderComponent } from "../custom/customSlider/SliderComponent";
+import { SwiperSlideComponent } from "../custom/customSlider/SwiperSlideComponent";
 
 import img1 from "../header/image/img1.webp";
 import img2 from "../header/image/img2.webp";
@@ -99,43 +100,43 @@ export const Header = () => {
             className={headerStyle.slider}
           >
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img2} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
+              <SwiperSlideComponent
+                img={img2}
+                title="Disk Plocki"
+                text="Lorem ipsum dolor sit amet"
+              />
             </SwiperSlide>
 
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img3} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
+              <SwiperSlideComponent
+                img={img3}
+                title="Filtri"
+                text="Lorem ipsum dolor sit amet"
+              />
             </SwiperSlide>
 
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img1} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
+              <SwiperSlideComponent
+                img={img1}
+                title="Kvacilo"
+                text="Lorem ipsum dolor sit amet"
+              />
             </SwiperSlide>
 
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img2} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
+              <SwiperSlideComponent
+                img={img2}
+                title="Disk Plocki"
+                text="Lorem ipsum dolor sit amet"
+              />
             </SwiperSlide>
 
             <SwiperSlide className={headerStyle.slider_item}>
-              <img src={img3} alt="image" className={headerStyle.img} />
-              <div className={headerStyle.slider_content}>
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
+              <SwiperSlideComponent
+                img={img3}
+                title="Disk"
+                text="Lorem ipsum dolor sit amet"
+              />
             </SwiperSlide>
           </Swiper>
         </div>
