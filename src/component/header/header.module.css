@@ -1,10 +1,42 @@
 .container {
-  width: 100%;
   max-width: 1700px;
   margin: 0 auto;
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 15px;
+  background-color: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+.nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav ul li a:hover {
+  color: rgb(255, 255, 255, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 .img {
@@ -71,11 +103,11 @@
 .slider_content {
   position: absolute;
   bottom: 0;
-  right: 0 ;
-  left: 0 ;
+  right: 0;
+  left: 0;
   text-align: center;
-  background-color: rgb(86, 61, 61,.6);
-  color: var(--maincol)
+  background-color: rgb(86, 61, 61, 0.6);
+  color: var(--maincol);
 }
 
 .slider_content h1 {
