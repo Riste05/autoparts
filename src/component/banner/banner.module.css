@@ -1,0 +1,13 @@
+.banner {
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  padding: 25px 0;
+}
+
+.banner p {
+  font-size: 30px;
+}
+
+.banner p span {
+  color: #fff;
+}

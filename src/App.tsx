@@ -3,6 +3,7 @@ import { InfoBar } from "./component/InfoBar/InfoBar";
 import { CategoryParts } from "./component/kategorii/CategoryParts";
 import { InfoText } from "./component/InfoText/InfoText";
 import { Brends } from "./component/brend/Brends";
+import { Banner } from "./component/banner/Banner";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <CategoryParts />
       <InfoText />
       <Brends />
+      <Banner />
     </>
   );
 };
