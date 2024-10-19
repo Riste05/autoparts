@@ -4,6 +4,8 @@ import { CategoryParts } from "./component/kategorii/CategoryParts";
 import { InfoText } from "./component/InfoText/InfoText";
 import { Brends } from "./component/brend/Brends";
 import { Banner } from "./component/banner/Banner";
+import { InfoPurchase } from "./component/infoPurchase/InfoPurchase";
+import { Footer } from "./component/footer/Footer";
 
 export const App = () => {
   return (
@@ -14,6 +16,8 @@ export const App = () => {
       <InfoText />
       <Brends />
       <Banner />
+      <InfoPurchase />
+      <Footer />
     </>
   );
 };
