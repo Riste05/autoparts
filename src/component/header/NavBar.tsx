@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import headerStyle from "../header/header.module.css";
 
 export const NavBar = () => {
@@ -5,19 +7,19 @@ export const NavBar = () => {
     <nav className={headerStyle.nav}>
       <ul>
         <li>
-          <a href="#">Делови</a>
+          <Link to="/delovi">Делови</Link>
         </li>
         <li>
-          <a href="#">Масло</a>
+          <Link to="/maslo">Масло</Link>
         </li>
       </ul>
-      <h1>Logo</h1>
+      <Link to="/">Logo</Link>
       <ul>
         <li>
-          <a href="#">Достава</a>
+          <Link to="#">Достава</Link>
         </li>
         <li>
-          <a href="#">Прашања</a>
+          <Link to="#">Прашања</Link>
         </li>
       </ul>
     </nav>
