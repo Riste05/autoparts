@@ -4,41 +4,44 @@ import headerStyle from "../../header/header.module.css";
 import { animateContainer } from "../customAnimation/customAnimation";
 import { animateHeaderItem } from "../customAnimation/customAnimation";
 
+import sliderData from "../../../data/sliderData.tsx";
+
 type SliderProps = {
-  img: string;
-  mainText: string;
-  span: string;
-  text: string;
-  btn: string;
+  slide: number;
 };
 
-export const SliderComponent = ({
-  img,
-  mainText,
-  span,
-  text,
-  btn,
-}: SliderProps) => {
+export const SliderComponent = ({ slide }: SliderProps) => {
   return (
-    <div className={headerStyle.item}>
-      <img src={img} alt="picture" className={headerStyle.img} />
-      <motion.div
-        className={headerStyle.content}
-        key="item"
-        variants={animateContainer}
-        initial="hidden"
-        animate="show"
-      >
-        <motion.h1 variants={animateHeaderItem}>
-          {mainText}
-          <br />
-          <span> {span}</span>
-        </motion.h1>
-        <motion.p variants={animateHeaderItem}>{text}</motion.p>
-        <motion.button className={headerStyle.btn} variants={animateHeaderItem}>
-          {btn}
-        </motion.button>
-      </motion.div>
-    </div>
+    <>
+      {sliderData.map((item, i) => (
+        <>
+          {slide === i && (
+            <div className={headerStyle.item}>
+              <img src={item.img} alt="picture" className={headerStyle.img} />
+              <motion.div
+                className={headerStyle.content}
+                key="item"
+                variants={animateContainer}
+                initial="hidden"
+                animate="show"
+              >
+                <motion.h1 variants={animateHeaderItem}>
+                  {item.mainText}
+                  <br />
+                  <span> {item.span}</span>
+                </motion.h1>
+                <motion.p variants={animateHeaderItem}>{item.text}</motion.p>
+                <motion.button
+                  className={headerStyle.btn}
+                  variants={animateHeaderItem}
+                >
+                  {item.btn}
+                </motion.button>
+              </motion.div>
+            </div>
+          )}
+        </>
+      ))}
+    </>
   );
 };
