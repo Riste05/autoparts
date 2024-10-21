@@ -8,6 +8,7 @@ import headerStyle from "./header.module.css";
 
 import { SliderComponent } from "../custom/customSlider/SliderComponent";
 import { SwiperSlideComponent } from "../custom/customSlider/SwiperSlideComponent";
+import { NavBar } from "./navBar";
 
 import img1 from "../header/image/img1.jpg";
 import img2 from "../header/image/img2.jpg";
@@ -21,28 +22,9 @@ export const Header = () => {
   return (
     <header>
       <div className={headerStyle.container}>
-        <nav className={headerStyle.nav}>
-          <ul>
-            <li>
-              <a href="#">Delovi</a>
-            </li>
-            <li>
-              <a href="#">Maslo</a>
-            </li>
-          </ul>
-          <h1>Logo</h1>
-          <ul>
-            <li>
-              <a href="#">Dostava</a>
-            </li>
-            <li>
-              <a href="#">Prasanje</a>
-            </li>
-          </ul>
-        </nav>
+        <NavBar />
         <main>
           <SliderComponent slide={slide} />
-          {/* //////////////////////////////////////////// */}
           {/* SWIPER */}
           <div className={headerStyle.wrapper}>
             <Swiper

@@ -15,42 +15,42 @@ export const CategoryParts = () => {
   return (
     <section className={categoryStyle.section}>
       <div className={categoryStyle.container}>
-        <h1 className={categoryStyle.text}>Kategorii na avto delovi</h1>
+        <h1 className={categoryStyle.text}>Категории на авто делови</h1>
 
         <div className={categoryStyle.category}>
           <div className={categoryStyle.item}>
             <img src={sopiranje} alt="image" />
-            <p>Sistem za sopiranje</p>
+            <p>Кочионен систем</p>
           </div>
           <div className={categoryStyle.item}>
             <img src={filtri} alt="image" />
-            <p>Filtri</p>
+            <p>Филтри</p>
           </div>
           <div className={categoryStyle.item}>
             <img src={kais} alt="image" />
-            <p>Kais</p>
+            <p>Каиш</p>
           </div>
         </div>
         {open && (
           <div className={categoryStyle.category}>
             <div className={categoryStyle.item}>
               <img src={menuvac} alt="image" />
-              <p>Menuvac</p>
+              <p>Менувач</p>
             </div>
             <div className={categoryStyle.item}>
               <img src={amortizeri} alt="image" />
-              <p>Amortizeri</p>
+              <p>Амортизери</p>
             </div>
             <div className={categoryStyle.item}>
               <img src={maslo} alt="image" />
-              <p>Maslo</p>
+              <p>Масло</p>
             </div>
           </div>
         )}
       </div>
       <div className={categoryStyle.btn}>
         <button onClick={() => setOpen(!open)}>
-          {open ? "Show Less" : "Add More"}
+          {open ? "Прикажи помалку" : "Прикажи повеќе"}
         </button>
       </div>
     </section>

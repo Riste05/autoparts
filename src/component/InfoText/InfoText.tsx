@@ -4,49 +4,46 @@ export const InfoText = () => {
   return (
     <section>
       <article className={textStyle.container}>
-        <h1 className={textStyle.text}>Informacii</h1>
+        <h1 className={textStyle.text}>Информации</h1>
         <div>
-          <h3>
-            Online prodovnica sto nudi sirok spektar na prozivodi za site vidovi
-            na vozila.
-          </h3>
-
-          <h3>Uslovi za koristenje</h3>
+          <h2>Услови за користење</h2>
           <div>
-            <h4>Ceni</h4>
-            <p>Cenite vo katalogot se so vklucen ddv</p>
+            <h3>Цени</h3>
+            <p>Цените во каталогот се со вклучен ДДВ</p>
           </div>
 
           <div>
-            <h4>Naracka</h4>
+            <h3>Нарачка</h3>
             <p>
-              Moze da se napravi preku chat-box, da ne iskontaktirate na nasiot
-              telefonski broj ili da ni pisete na mail.
+              Може да се направи преку <strong>chat-box</strong>, да не
+              исконтактирате на нашиот телефонски број
+              <strong>646516515</strong> или да ни пишете <strong>mail</strong>.
             </p>
           </div>
 
           <div>
-            <h4>Isporaka</h4>
+            <h3>Испорака</h3>
             <p>
-              Naracanite prozivodi se dostavuvaat vo rok od 2-3 dena preku kargo
-              ekspres.Sekoja naracka nad 3000 den e besplatna.Za naracka pod
-              3000 den cenata na pratkata iznesuva 150 den
+              Нарачаните производи се доставуваат во рок од 1-2 работни дена
+              преку карго експрес во зависност во кој период од тековниот ден е
+              направена нарачката.Секоја нарачка над 3000ден е бесплатна.За
+              нарачка под 3000ден цената на пратката изнесува 150ден
             </p>
           </div>
 
           <div>
-            <h4>Plakanje</h4>
-            <p>Proizvodot se plaka pri podiganje na pratkata(otkup)</p>
+            <h3>Плаќање</h3>
+            <p>Производот се плаќа при подигање на пратката(откуп)</p>
           </div>
 
           <div>
-            <h4>Vrakanje</h4>
+            <h3>Враќање</h3>
             <p>
               Секој наш продукт може да биде вратен или заменет во рок од 14
               дена. Делот не треба да биде монтиран и да биде со зачувана
               опаковка.При не практикување на овие услови како изгубена опаковка
               или монтиран продукт, Online има право да не го прима вратениот
-              prozivod.
+              производ.
             </p>
           </div>
         </div>

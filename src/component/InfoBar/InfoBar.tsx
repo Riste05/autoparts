@@ -29,23 +29,23 @@ export const InfoBar = () => {
       >
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faCarSide} className={barStyle.icon} />
-          <p>Avto Delovi</p>
+          <p>Авто Делови</p>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faOilCan} className={barStyle.icon} />
-          <p>Masla</p>
+          <p>Масла</p>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faAddressBook} className={barStyle.icon} />
-          <p>Kontakt</p>
+          <p>Контакт</p>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faTruckFast} className={barStyle.icon} />
-          <p>Dostava</p>
+          <p>Достава</p>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faComments} className={barStyle.icon} />
-          <p>Prasanja</p>
+          <p>Прашања</p>
         </motion.div>
       </motion.div>
     </article>
