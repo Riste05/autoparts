@@ -8,7 +8,7 @@ import headerStyle from "./header.module.css";
 
 import { SliderComponent } from "../custom/customSlider/SliderComponent";
 import { SwiperSlideComponent } from "../custom/customSlider/SwiperSlideComponent";
-import { NavBar } from "./navBar";
+import { NavBar } from "./NavBar";
 
 import img1 from "../header/image/img1.jpg";
 import img2 from "../header/image/img2.jpg";
