@@ -27,8 +27,6 @@ export const SliderComponent = ({ slide }: SliderProps) => {
               >
                 <motion.h1 variants={animateHeaderItem}>
                   {item.mainText}
-                  <br />
-                  <span> {item.span}</span>
                 </motion.h1>
                 <motion.p variants={animateHeaderItem}>{item.text}</motion.p>
                 <motion.button
