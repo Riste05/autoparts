@@ -3,7 +3,7 @@
 :root {
   --maincol: #f3f3f3;
   --whitecol: #fff;
-  --transparent: rgba(0, 0, 0, 0.5);
+  --transparent: rgba(0, 0, 0, 0.8);
   --boxshadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 

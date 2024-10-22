@@ -13,7 +13,7 @@ export const Header = () => {
     <header>
       <div className={headerStyle.container}>
         <NavBar />
-        <main>
+        <main className={headerStyle.main}>
           <SliderComponent slide={slide} />
           {/* SWIPER */}
           <div className={headerStyle.wrapper}>

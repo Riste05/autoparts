@@ -52,6 +52,7 @@ export const CategoryParts = () => {
         <button onClick={() => setOpen(!open)}>
           {open ? "Прикажи помалку" : "Прикажи повеќе"}
         </button>
+        {open && <button>Сите</button>}
       </div>
     </section>
   );

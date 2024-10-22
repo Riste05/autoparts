@@ -1,66 +1,72 @@
 .section {
-    padding: 80px 50px;
-    background-color: var(--maincol);
+  padding: 80px 50px;
+  background-color: var(--maincol);
 }
 
 .container {
-    width: 100%;
-    max-width: 1700px;
-    margin: 0 auto 50px ;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto 50px;
 }
 
 .text {
-    text-align: center ;
-    margin-bottom: 50px ;
-    font-size: 50px ;
-} 
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
 
 .category {
-    display: grid ;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px ;
-    margin-bottom: 15px ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    padding-top: 50px ;
-    background-color: var(--whitecol) ;
-    border-radius: 5px ;
-    cursor: pointer ;
-    box-shadow: 0 5px 10px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background-color: var(--whitecol);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px var(--box-shadow);
 }
 
 img {
-    transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .item:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .item p {
-    margin: 50px 0 ;
-    font-size: 18px ;
+  margin: 50px 0;
+  font-size: 18px;
 }
 
 .btn {
-    text-align: center ;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .btn button {
-    border: none ;
-    padding: 20px 85px ;
-    background-color: var(--whitecol);
-    font-size: 22px ;
-    cursor: pointer;
-    border-radius: 5px ;
-    font-weight: 600;
-    transition: all 500ms ease ;
+  border: none;
+  padding: 15px 25px;
+  background-color: var(--whitecol);
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 500ms ease;
 }
 
 .btn button:hover {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }
