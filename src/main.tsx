@@ -4,7 +4,7 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/home/HomePage";
 import { DeloviPage } from "./pages/delovi/DeloviPage";
 import { Maslo } from "./pages/maslo/Maslo";
 

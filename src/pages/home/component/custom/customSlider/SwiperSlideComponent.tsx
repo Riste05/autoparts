@@ -4,7 +4,7 @@ import "swiper/css";
 
 import headerStyle from "../../header/header.module.css";
 
-import swiperData from "../../../data/swiperData";
+import swiperData from "../../../../../data/swiperData";
 
 type SwiperProps = {
   setSlide: React.Dispatch<React.SetStateAction<number>>;

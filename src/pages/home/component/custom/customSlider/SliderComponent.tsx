@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 import headerStyle from "../../header/header.module.css";
-import { animateContainer } from "../customAnimation/customAnimation";
-import { animateHeaderItem } from "../customAnimation/customAnimation";
+import { animateContainer } from "../customAnimation/customAnimation.tsx";
+import { animateHeaderItem } from "../customAnimation/customAnimation.tsx";
 
-import sliderData from "../../../data/sliderData.tsx";
+import sliderData from "../../../../../data/sliderData.tsx";
 
 type SliderProps = {
   slide: number;
