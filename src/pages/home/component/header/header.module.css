@@ -124,3 +124,27 @@
   font-size: 13px;
   font-weight: 500;
 }
+
+/* ////////////////////////////
+CSS */
+
+@media only screen and (max-width: 850px) {
+  .content {
+    top: 20%;
+  }
+
+  .img {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .content h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+}

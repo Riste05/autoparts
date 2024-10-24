@@ -15,7 +15,18 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
     <Swiper
       modules={[Autoplay]}
       loop={true}
-      slidesPerView={2.5}
+      slidesPerView={1}
+      breakpoints={{
+        600: {
+          slidesPerView: 1.5,
+        },
+        1000: {
+          slidesPerView: 2.5,
+        },
+        1450: {
+          slidesPerView: 3.5,
+        },
+      }}
       speed={1000}
       // autoplay={{ delay: 4000 }}
       spaceBetween={50}
