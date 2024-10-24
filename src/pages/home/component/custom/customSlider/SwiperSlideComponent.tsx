@@ -25,7 +25,7 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
       className={headerStyle.slider}
     >
       {swiperData.map((item) => (
-        <SwiperSlide className={headerStyle.slider_item} key={item.id}>
+        <SwiperSlide className={headerStyle.slider_item}>
           <img src={item.img} alt="image" className={headerStyle.img} />
           <div className={headerStyle.slider_content}>
             <h1>{item.title}</h1>
