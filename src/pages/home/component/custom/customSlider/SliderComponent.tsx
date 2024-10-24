@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 import headerStyle from "../../header/header.module.css";
@@ -14,7 +15,7 @@ export const SliderComponent = ({ slide }: SliderProps) => {
   return (
     <>
       {sliderData.map((item, i) => (
-        <>
+        <React.Fragment key={item.id}>
           {slide === i && (
             <div className={headerStyle.item}>
               <img src={item.img} alt="picture" className={headerStyle.img} />
@@ -38,7 +39,7 @@ export const SliderComponent = ({ slide }: SliderProps) => {
               </motion.div>
             </div>
           )}
-        </>
+        </React.Fragment>
       ))}
     </>
   );

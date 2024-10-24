@@ -17,7 +17,7 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
       loop={true}
       slidesPerView={2.5}
       speed={1000}
-      autoplay={{ delay: 4000 }}
+      // autoplay={{ delay: 4000 }}
       spaceBetween={50}
       onActiveIndexChange={(swiper) => {
         setSlide(swiper.realIndex);
@@ -25,7 +25,7 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
       className={headerStyle.slider}
     >
       {swiperData.map((item) => (
-        <SwiperSlide className={headerStyle.slider_item}>
+        <SwiperSlide className={headerStyle.slider_item} key={item.id}>
           <img src={item.img} alt="image" className={headerStyle.img} />
           <div className={headerStyle.slider_content}>
             <h1>{item.title}</h1>
