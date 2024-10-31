@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import categoryStyle from "./CategoryParts.module.css";
 
 import amortizeri from "./image/amortizeri.jpg";
@@ -10,8 +8,6 @@ import menuvac from "./image/menuvac.jpg";
 import sopiranje from "./image/sopiranje.jpg";
 
 export const CategoryParts = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <section className={categoryStyle.section}>
       <div className={categoryStyle.container}>
@@ -30,29 +26,20 @@ export const CategoryParts = () => {
             <img src={kais} alt="image" />
             <p>Каиш</p>
           </div>
-        </div>
-        {open && (
-          <div className={categoryStyle.category}>
-            <div className={categoryStyle.item}>
-              <img src={menuvac} alt="image" />
-              <p>Менувач</p>
-            </div>
-            <div className={categoryStyle.item}>
-              <img src={amortizeri} alt="image" />
-              <p>Амортизери</p>
-            </div>
-            <div className={categoryStyle.item}>
-              <img src={maslo} alt="image" />
-              <p>Масло</p>
-            </div>
+
+          <div className={categoryStyle.item}>
+            <img src={menuvac} alt="image" />
+            <p>Менувач</p>
           </div>
-        )}
-      </div>
-      <div className={categoryStyle.btn}>
-        <button onClick={() => setOpen(!open)}>
-          {open ? "Прикажи помалку" : "Прикажи повеќе"}
-        </button>
-        {open && <button>Сите</button>}
+          <div className={categoryStyle.item}>
+            <img src={amortizeri} alt="image" />
+            <p>Амортизери</p>
+          </div>
+          <div className={categoryStyle.item}>
+            <img src={maslo} alt="image" />
+            <p>Масло</p>
+          </div>
+        </div>
       </div>
     </section>
   );
