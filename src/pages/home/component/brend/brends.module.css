@@ -1,13 +1,28 @@
 .container {
-    width: 100%;
-    max-width: 1700px;
-    margin: 0 auto;
-    padding: 80px 50px;
-    background-color: var(--maincol);
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 50px 30px 100px;
+  background-color: var(--maincol);
 }
 
 .text {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.swiper-container {
+  height: 120px;
+  padding: 10px;
+}
+
+.swiper-slide {
+  max-height: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.swiper-slide img {
+  height: 100%;
 }
