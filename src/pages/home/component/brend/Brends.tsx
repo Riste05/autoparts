@@ -14,12 +14,26 @@ export const Brends = () => {
         <Swiper
           modules={[Autoplay]}
           loop
-          slidesPerView={5.5}
+          slidesPerView={1}
           speed={2000}
-          spaceBetween={100}
-          // autoplay={{
-          //   delay: 0,
-          // }}
+          spaceBetween={50}
+          breakpoints={{
+            500: {
+              slidesPerView: 1.5,
+            },
+            600: {
+              slidesPerView: 2.5,
+            },
+            800: {
+              slidesPerView: 3.5,
+            },
+            1100: {
+              slidesPerView: 4.5,
+            },
+          }}
+          autoplay={{
+            delay: 0,
+          }}
           className={brandsStyle["swiper-container"]}
         >
           {brendData.map((ele) => (

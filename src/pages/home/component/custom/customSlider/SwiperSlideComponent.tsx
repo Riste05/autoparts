@@ -26,6 +26,9 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
         1450: {
           slidesPerView: 3.5,
         },
+        1700: {
+          slidesPerView: 4.5,
+        },
       }}
       speed={1000}
       // autoplay={{ delay: 4000 }}
