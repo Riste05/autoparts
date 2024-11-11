@@ -54,3 +54,10 @@ CSS */
     height: 30px;
   }
 }
+
+@media only screen and (max-width: 380px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

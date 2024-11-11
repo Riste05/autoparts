@@ -77,3 +77,13 @@ img {
     line-height: 45px;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .section {
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 40px;
+  }
+}

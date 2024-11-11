@@ -7,8 +7,8 @@ export const Banner = () => {
     <div className={bannerStyle.banner}>
       <img src={img1} alt="image" />
       <p>
-        Безбедна и брза испорака на купените производи до <br />
-        <span>вашата адреса</span>
+        Безбедна и брза испорака на купените производи до
+        <span> вашата адреса</span>
       </p>
     </div>
   );
