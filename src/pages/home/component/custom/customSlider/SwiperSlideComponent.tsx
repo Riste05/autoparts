@@ -31,7 +31,7 @@ export const SwiperSlideComponent = ({ setSlide }: SwiperProps) => {
         },
       }}
       speed={1000}
-      // autoplay={{ delay: 4000 }}
+      autoplay={{ delay: 4000 }}
       spaceBetween={50}
       onActiveIndexChange={(swiper) => {
         setSlide(swiper.realIndex);

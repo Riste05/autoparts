@@ -17,6 +17,7 @@ export const Brends = () => {
           slidesPerView={1}
           speed={2000}
           spaceBetween={50}
+          allowTouchMove={false} // proveri dali so touch ke raboti
           breakpoints={{
             500: {
               slidesPerView: 1.5,
@@ -37,7 +38,7 @@ export const Brends = () => {
           className={brandsStyle["swiper-container"]}
         >
           {brendData.map((ele) => (
-            <SwiperSlide className={brandsStyle["swiper-slide"]}>
+            <SwiperSlide className={brandsStyle["swiper-slide"]} key={ele.info}>
               <img src={ele.img} alt="image" />
             </SwiperSlide>
           ))}
