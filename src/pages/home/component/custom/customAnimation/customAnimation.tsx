@@ -15,3 +15,8 @@ export const animateHeaderItem = {
     transition: { duration: 0.8 },
   },
 };
+
+export const animateHeaderOilItem = {
+  hidden: { opacity: 0, x: 120, filter: "blur(10px)" },
+  show: { opacity: 1, x: 0, filter: "blur(0)", transition: { duration: 0.8 } },
+};

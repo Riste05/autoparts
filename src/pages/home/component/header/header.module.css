@@ -47,6 +47,13 @@
   height: 600px;
 }
 
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: var(--transparent);
+}
+
 .item {
   height: 100%;
 }
@@ -58,8 +65,6 @@
 
 .content {
   position: absolute;
-  /* width: 100%; */
-  background-color: var(--transparent);
   color: #fff;
   top: 25%;
   padding: 25px 50px;
