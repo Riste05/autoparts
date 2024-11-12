@@ -3,6 +3,7 @@
   --whitecol: #fff;
   --transparent: rgba(0, 0, 0, 0.8);
   --boxshadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  --beforecolor: rgba(0, 0, 0, 0.6);
 }
 
 @font-face {

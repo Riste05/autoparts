@@ -14,12 +14,13 @@
   cursor: pointer;
 }
 
-.info p {
-  font-size: 20px;
+.info span a {
+  text-decoration: none;
   color: rgb(51, 51, 51);
+  font-size: 20px;
 }
 
-.info p:hover {
+.info span a:hover {
   color: rgb(51, 51, 51, 0.4);
   text-decoration: underline;
   text-underline-offset: 10px;

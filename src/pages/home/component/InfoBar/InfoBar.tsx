@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import barStyle from "./infoBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,23 +30,33 @@ export const InfoBar = () => {
       >
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faCarSide} className={barStyle.icon} />
-          <p>Авто Делови</p>
+          <span>
+            <Link to="/delovi">Авто Делови</Link>
+          </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faOilCan} className={barStyle.icon} />
-          <p>Масла</p>
+          <span>
+            <Link to="/maslo">Масла</Link>
+          </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faAddressBook} className={barStyle.icon} />
-          <p>Контакт</p>
+          <span>
+            <Link to="#">Контакт</Link>
+          </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faTruckFast} className={barStyle.icon} />
-          <p>Достава</p>
+          <span>
+            <Link to="#">Достава</Link>
+          </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faComments} className={barStyle.icon} />
-          <p>Прашања</p>
+          <span>
+            <Link to="#">Прашања</Link>
+          </span>
         </motion.div>
       </motion.div>
     </article>
