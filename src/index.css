@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --maincol: #f3f3f3;
   --whitecol: #fff;
   --transparent: rgba(0, 0, 0, 0.8);
   --boxshadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+  font-family: "shantel";
+  src: url("./fonts/shantel/static/ShantellSans-Regular.ttf");
 }
 
 * {
@@ -14,6 +17,6 @@
 }
 
 body {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: "shantel", serif;
   overflow-x: hidden;
 }
