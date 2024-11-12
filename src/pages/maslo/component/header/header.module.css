@@ -25,28 +25,25 @@
 
 .main {
   position: absolute;
+  width: 100%;
   max-width: 90%;
   top: 25%;
   left: 5%;
-  transform: translate(-2%, -2%);
   display: flex;
   gap: 20px;
   align-items: center;
   z-index: 2;
 }
 
-.main > div {
+.content {
   width: 50%;
+  padding: 30px;
+  color: #fff;
 }
 
 .content h1 {
   font-size: 60px;
   margin-bottom: 40px;
-}
-
-.content {
-  padding: 40px;
-  color: #fff;
 }
 
 .content p {
@@ -56,30 +53,59 @@
 
 /* ///////////////////////////////////// */
 .images {
-  position: relative;
+  width: 50%;
   display: flex;
   align-items: center;
 }
 
 .img {
-  position: absolute;
   width: 220px;
 }
 
-.img img {
-  width: 100%;
-  height: 100%;
-}
-
 .img:nth-child(2) {
-  left: 140px;
+  position: relative;
+  margin-left: -50px;
   z-index: 1;
 }
 
 .img:nth-child(3) {
-  left: 270px;
+  margin-left: -70px;
 }
 
 .img:nth-child(4) {
-  left: 420px;
+  margin-left: -60px;
+}
+
+@media only screen and (max-width: 1245px) {
+  .content h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 1065px) {
+  .content h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 887px) {
+  .main {
+    top: 17%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
 }
