@@ -103,9 +103,35 @@
 @media only screen and (max-width: 740px) {
   .main {
     flex-direction: column;
+    gap: 10px;
   }
 
   .content {
     width: 100%;
+    padding: 25px;
+  }
+
+  .images {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .content {
+    padding: 15px;
+  }
+
+  .content h1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 14px;
   }
 }

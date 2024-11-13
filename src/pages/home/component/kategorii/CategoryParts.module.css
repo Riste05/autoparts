@@ -30,6 +30,7 @@
   background-color: var(--whitecol);
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
   box-shadow: var(--boxshadow);
 }
 
