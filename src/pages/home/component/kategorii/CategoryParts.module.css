@@ -48,6 +48,20 @@ img {
   font-size: 18px;
 }
 
+.item p::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--transparent);
+  transition: all 200ms;
+}
+
+.item:hover p::after {
+  width: 100%;
+}
+
 .btn {
   text-align: center;
 }

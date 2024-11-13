@@ -4,10 +4,12 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { RootLayout } from "./rootLayout/RootLayout";
 import { HomePage } from "./pages/home/HomePage";
 import { DeloviPage } from "./pages/delovi/DeloviPage";
 import { Maslo } from "./pages/maslo/Maslo";
-import { RootLayout } from "./rootLayout/RootLayout";
+import { Dostava } from "./pages/dostava/Dostava";
+import { Prasanje } from "./pages/prasanje/Prasanje";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/delovi", element: <DeloviPage /> },
       { path: "/maslo", element: <Maslo /> },
+      { path: "/dostava", element: <Dostava /> },
+      { path: "/prasanje", element: <Prasanje /> },
     ],
   },
 ]);

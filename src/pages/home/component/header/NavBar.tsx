@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import headerStyle from "../header/header.module.css";
 import logo from "../banner/image/bannerimg.png";
@@ -14,16 +14,44 @@ export const NavBar = () => {
 
       <ul>
         <li>
-          <Link to="/delovi">Делови</Link>
+          <NavLink
+            to="/delovi"
+            className={({ isActive }) =>
+              isActive ? `${headerStyle.active}` : undefined
+            }
+          >
+            Делови
+          </NavLink>
         </li>
         <li>
-          <Link to="/maslo">Масло</Link>
+          <NavLink
+            to="/maslo"
+            className={({ isActive }) =>
+              isActive ? `${headerStyle.active}` : undefined
+            }
+          >
+            Масло
+          </NavLink>
         </li>
         <li>
-          <Link to="#">Достава</Link>
+          <NavLink
+            to="/dostava"
+            className={({ isActive }) =>
+              isActive ? `${headerStyle.active}` : undefined
+            }
+          >
+            Достава
+          </NavLink>
         </li>
         <li>
-          <Link to="#">Прашања</Link>
+          <NavLink
+            to="/prasanje"
+            className={({ isActive }) =>
+              isActive ? `${headerStyle.active}` : undefined
+            }
+          >
+            Прашања
+          </NavLink>
         </li>
       </ul>
     </nav>

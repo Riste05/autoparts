@@ -20,11 +20,25 @@
   font-size: 20px;
 }
 
-.info span a:hover {
+.info span::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--transparent);
+  transition: all 200ms;
+}
+
+.info:hover span::after {
+  width: 100%;
+}
+
+/* .info span a:hover {
   color: rgb(51, 51, 51, 0.4);
   text-decoration: underline;
   text-underline-offset: 10px;
-}
+} */
 
 .icon {
   width: 40px;
