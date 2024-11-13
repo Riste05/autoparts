@@ -11,8 +11,7 @@
   content: "";
   position: absolute;
   inset: 0 0 0 0;
-  /* background-color: var(--transparent); */
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .banner img {
@@ -25,7 +24,7 @@
 }
 
 .banner p span {
-  color: red;
+  color: var(--redcolor);
 }
 
 @media only screen and (max-width: 380px) {

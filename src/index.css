@@ -1,8 +1,10 @@
 :root {
-  --maincol: #f3f3f3;
   --whitecol: #fff;
+  --redcolor: red;
   --transparent: rgba(0, 0, 0, 0.8);
-  --boxshadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  --boxshadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  --hover: rgba(255, 255, 255, 0.5);
+  --textcolor: #000;
 }
 
 @font-face {

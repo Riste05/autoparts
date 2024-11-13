@@ -38,7 +38,7 @@
 .content {
   width: 50%;
   padding: 30px;
-  color: #fff;
+  color: var(--whitecol);
 }
 
 .content h1 {
@@ -51,7 +51,6 @@
   line-height: 25px;
 }
 
-/* ///////////////////////////////////// */
 .images {
   width: 50%;
   display: flex;

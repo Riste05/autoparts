@@ -1,7 +1,6 @@
 .container {
   max-width: 1700px;
   margin: 0 auto;
-  background-color: var(--maincol);
   padding: 40px 15px;
   display: flex;
   justify-content: space-evenly;
