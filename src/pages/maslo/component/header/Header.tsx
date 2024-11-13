@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { animateContainer } from "../../../home/component/custom/customAnimation/customAnimation";
-import { animateHeaderItem } from "../../../home/component/custom/customAnimation/customAnimation";
-import { animateHeaderOilItem } from "../../../home/component/custom/customAnimation/customAnimation";
+import { animateContainer } from "../../../../customAnimation/customAnimation";
+import { animateHeaderItem } from "../../../../customAnimation/customAnimation";
+import { animateHeaderOilItem } from "../../../../customAnimation/customAnimation";
 
 import styleHeader from "./header.module.css";
 import headerImage from "./image/oil-img.jpg";

@@ -11,7 +11,7 @@ import {
   faComments,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { animateContainer } from "../custom/customAnimation/customAnimation";
+import { animateContainer } from "../../../../customAnimation/customAnimation";
 
 const item = {
   hidden: { opacity: 0, x: -100 },

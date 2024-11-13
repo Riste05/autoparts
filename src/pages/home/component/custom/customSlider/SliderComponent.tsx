@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import headerStyle from "../../header/header.module.css";
-import { animateContainer } from "../customAnimation/customAnimation.tsx";
-import { animateHeaderItem } from "../customAnimation/customAnimation.tsx";
+import { animateContainer } from "../../../../../customAnimation/customAnimation.tsx";
+import { animateHeaderItem } from "../../../../../customAnimation/customAnimation.tsx";
 
 import sliderData from "../../../../../data/sliderData.tsx";
 
