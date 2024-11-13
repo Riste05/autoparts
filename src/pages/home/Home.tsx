@@ -7,7 +7,7 @@ import { Banner } from "./component/banner/Banner";
 import { InfoPurchase } from "./component/infoPurchase/InfoPurchase";
 import { Footer } from "./component/footer/Footer";
 
-export const HomePage = () => {
+export const Home = () => {
   return (
     <>
       <Header />

@@ -1,3 +1,3 @@
-export const DeloviPage = () => {
+export const Delovi = () => {
   return <div>DeloviPage</div>;
 };
