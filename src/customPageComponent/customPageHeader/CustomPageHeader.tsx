@@ -8,6 +8,8 @@ import styleHeader from "./customPageHeaderStyle.module.css";
 
 type PageHeaderProps = {
   headerImage: string;
+  partsName: string;
+  text: string;
   img1: string;
   img2: string;
   img3: string;
@@ -16,6 +18,8 @@ type PageHeaderProps = {
 
 export const CustomPageHeader = ({
   headerImage,
+  partsName,
+  text,
   img1,
   img2,
   img3,
@@ -34,15 +38,8 @@ export const CustomPageHeader = ({
             initial="hidden"
             animate="show"
           >
-            <motion.h1 variants={animateHeaderItem}>Моторно Масло</motion.h1>
-            <motion.p variants={animateHeaderItem}>
-              Моторно масло се користи за подмачкување на мотори со внатрешно
-              согорување.Тие обично се состојат од базни масла засилено со разни
-              адитиви, особено адитиви против абење, подобрувачи на индексот на
-              вискозност.Главната функција на моторното масло е да го намали
-              абењето на подвижните делови и да го чисти моторот од тиња и
-              лакови.
-            </motion.p>
+            <motion.h1 variants={animateHeaderItem}>{partsName}</motion.h1>
+            <motion.p variants={animateHeaderItem}>{text}</motion.p>
           </motion.div>
           <motion.div
             className={styleHeader.images}
@@ -55,25 +52,25 @@ export const CustomPageHeader = ({
               className={styleHeader.img}
               variants={animateHeaderPagesImage}
             >
-              <img src={img1} alt="oil-image" />
+              <img src={img1} alt="image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
               variants={animateHeaderPagesImage}
             >
-              <img src={img2} alt="oil-image" />
+              <img src={img2} alt="image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
               variants={animateHeaderPagesImage}
             >
-              <img src={img3} alt="oil-image" />
+              <img src={img3} alt="image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
               variants={animateHeaderPagesImage}
             >
-              <img src={img4} alt="oil-image" />
+              <img src={img4} alt="image" />
             </motion.div>
           </motion.div>
         </main>
