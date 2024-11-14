@@ -8,6 +8,7 @@ import styleHeader from "./customPageHeaderStyle.module.css";
 
 type PageHeaderProps = {
   headerImage: string;
+  oneImage: boolean;
   partsName: string;
   text: string;
   img1: string;
@@ -18,6 +19,7 @@ type PageHeaderProps = {
 
 export const CustomPageHeader = ({
   headerImage,
+  oneImage,
   partsName,
   text,
   img1,
@@ -48,30 +50,41 @@ export const CustomPageHeader = ({
             initial="hidden"
             animate="show"
           >
-            <motion.div
-              className={styleHeader.img}
-              variants={animateHeaderPagesImage}
-            >
-              <img src={img1} alt="image" />
-            </motion.div>
-            <motion.div
-              className={styleHeader.img}
-              variants={animateHeaderPagesImage}
-            >
-              <img src={img2} alt="image" />
-            </motion.div>
-            <motion.div
-              className={styleHeader.img}
-              variants={animateHeaderPagesImage}
-            >
-              <img src={img3} alt="image" />
-            </motion.div>
-            <motion.div
-              className={styleHeader.img}
-              variants={animateHeaderPagesImage}
-            >
-              <img src={img4} alt="image" />
-            </motion.div>
+            {oneImage ? (
+              <motion.div
+                className={!oneImage ? styleHeader.img : ""}
+                variants={animateHeaderPagesImage}
+              >
+                <img src={img1} alt="image" />
+              </motion.div>
+            ) : (
+              <>
+                <motion.div
+                  className={styleHeader.img}
+                  variants={animateHeaderPagesImage}
+                >
+                  <img src={img1} alt="image" />
+                </motion.div>
+                <motion.div
+                  className={styleHeader.img}
+                  variants={animateHeaderPagesImage}
+                >
+                  <img src={img2} alt="image" />
+                </motion.div>
+                <motion.div
+                  className={styleHeader.img}
+                  variants={animateHeaderPagesImage}
+                >
+                  <img src={img3} alt="image" />
+                </motion.div>
+                <motion.div
+                  className={styleHeader.img}
+                  variants={animateHeaderPagesImage}
+                >
+                  <img src={img4} alt="image" />
+                </motion.div>
+              </>
+            )}
           </motion.div>
         </main>
       </div>
