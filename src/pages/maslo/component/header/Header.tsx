@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { animateContainer } from "../../../../customAnimation/customAnimation";
 import { animateHeaderItem } from "../../../../customAnimation/customAnimation";
-import { animateHeaderOilItem } from "../../../../customAnimation/customAnimation";
+import { animateHeaderPagesImage } from "../../../../customAnimation/customAnimation";
 
 import styleHeader from "./header.module.css";
 import headerImage from "./image/oil-img.jpg";
@@ -44,25 +44,25 @@ export const Header = () => {
           >
             <motion.div
               className={styleHeader.img}
-              variants={animateHeaderOilItem}
+              variants={animateHeaderPagesImage}
             >
               <img src={liquimoly} alt="oil-image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
-              variants={animateHeaderOilItem}
+              variants={animateHeaderPagesImage}
             >
               <img src={castrol} alt="oil-image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
-              variants={animateHeaderOilItem}
+              variants={animateHeaderPagesImage}
             >
               <img src={total} alt="oil-image" />
             </motion.div>
             <motion.div
               className={styleHeader.img}
-              variants={animateHeaderOilItem}
+              variants={animateHeaderPagesImage}
             >
               <img src={shell} alt="oil-image" />
             </motion.div>

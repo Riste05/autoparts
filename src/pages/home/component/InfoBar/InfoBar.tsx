@@ -43,19 +43,19 @@ export const InfoBar = () => {
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faAddressBook} className={barStyle.icon} />
           <span>
-            <Link to="#">Контакт</Link>
+            <Link to="/kontakt">Контакт</Link>
           </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faTruckFast} className={barStyle.icon} />
           <span>
-            <Link to="#">Достава</Link>
+            <Link to="/dostava">Достава</Link>
           </span>
         </motion.div>
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faComments} className={barStyle.icon} />
           <span>
-            <Link to="#">Прашања</Link>
+            <Link to="/prasanje">Прашања</Link>
           </span>
         </motion.div>
       </motion.div>

@@ -97,6 +97,8 @@
   border-radius: 2px;
   font-weight: bold;
   padding: 10px 20px;
+  letter-spacing: 1px;
+  color: var(--whitecol);
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }

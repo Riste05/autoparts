@@ -10,6 +10,7 @@ import { Delovi } from "./pages/delovi/Delovi";
 import { Maslo } from "./pages/maslo/Maslo";
 import { Dostava } from "./pages/dostava/Dostava";
 import { Prasanje } from "./pages/prasanje/Prasanje";
+import { Kontakt } from "./pages/kontakt/Kontakt";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/delovi", element: <Delovi /> },
       { path: "/maslo", element: <Maslo /> },
+      { path: "/kontakt", element: <Kontakt /> },
       { path: "/dostava", element: <Dostava /> },
       { path: "/prasanje", element: <Prasanje /> },
     ],

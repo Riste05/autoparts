@@ -16,7 +16,7 @@ export const animateHeaderItem = {
   },
 };
 
-export const animateHeaderOilItem = {
+export const animateHeaderPagesImage = {
   hidden: { opacity: 0, x: 120, filter: "blur(10px)" },
   show: {
     opacity: 1,

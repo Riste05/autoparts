@@ -35,12 +35,12 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to="/dostava"
+            to="/kontakt"
             className={({ isActive }) =>
               isActive ? `${headerStyle.active}` : undefined
             }
           >
-            Достава
+            Контакт
           </NavLink>
         </li>
         <li>
