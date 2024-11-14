@@ -1,3 +1,9 @@
+import { Header } from "./header/Header";
+
 export const Kontakt = () => {
-  return <div>Kontakt</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
