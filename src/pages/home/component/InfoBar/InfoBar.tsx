@@ -55,7 +55,7 @@ export const InfoBar = () => {
         <motion.div className={barStyle.info} variants={item}>
           <FontAwesomeIcon icon={faComments} className={barStyle.icon} />
           <span>
-            <Link to="/prasanje">Прашања</Link>
+            <Link to="/prasaj">Прашања</Link>
           </span>
         </motion.div>
       </motion.div>

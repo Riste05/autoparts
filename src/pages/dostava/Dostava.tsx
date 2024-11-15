@@ -1,3 +1,9 @@
+import { Header } from "./header/Header";
+
 export const Dostava = () => {
-  return <div>Dostava</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
