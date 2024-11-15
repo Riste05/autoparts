@@ -13,7 +13,7 @@ export const InfoPurchase = () => {
       <div className={purchaseStyle.item}>
         <FontAwesomeIcon icon={faWarehouse} className={purchaseStyle.img} />
         <div className={purchaseStyle.content}>
-          <h3>Голем спектар на прозиводи</h3>
+          <h3>Голем спектар на производи</h3>
           <p>Сите видови на авто делови за сите типови на возила</p>
         </div>
       </div>

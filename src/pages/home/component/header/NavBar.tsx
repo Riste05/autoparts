@@ -45,12 +45,12 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to="/prasanje"
+            to="/prasaj"
             className={({ isActive }) =>
               isActive ? `${headerStyle.active}` : undefined
             }
           >
-            Прашања
+            Прашај
           </NavLink>
         </li>
       </ul>

@@ -9,6 +9,7 @@ import styleHeader from "./customPageHeaderStyle.module.css";
 type PageHeaderProps = {
   headerImage: string;
   oneImage: boolean;
+  removeImage?: boolean;
   partsName: string;
   text: string;
   img1: string;
@@ -20,6 +21,7 @@ type PageHeaderProps = {
 export const CustomPageHeader = ({
   headerImage,
   oneImage,
+  removeImage,
   partsName,
   text,
   img1,
@@ -43,49 +45,54 @@ export const CustomPageHeader = ({
             <motion.h1 variants={animateHeaderItem}>{partsName}</motion.h1>
             <motion.p variants={animateHeaderItem}>{text}</motion.p>
           </motion.div>
-          <motion.div
-            className={styleHeader.images}
-            key="oilimage"
-            variants={animateContainer}
-            initial="hidden"
-            animate="show"
-          >
-            {oneImage ? (
-              <motion.div
-                className={!oneImage ? styleHeader.img : ""}
-                variants={animateHeaderPagesImage}
-              >
-                <img src={img1} alt="image" />
-              </motion.div>
-            ) : (
-              <>
+
+          {!removeImage ? (
+            <motion.div
+              className={styleHeader.images}
+              key="oilimage"
+              variants={animateContainer}
+              initial="hidden"
+              animate="show"
+            >
+              {oneImage ? (
                 <motion.div
-                  className={styleHeader.img}
+                  className={!oneImage ? styleHeader.img : ""}
                   variants={animateHeaderPagesImage}
                 >
                   <img src={img1} alt="image" />
                 </motion.div>
-                <motion.div
-                  className={styleHeader.img}
-                  variants={animateHeaderPagesImage}
-                >
-                  <img src={img2} alt="image" />
-                </motion.div>
-                <motion.div
-                  className={styleHeader.img}
-                  variants={animateHeaderPagesImage}
-                >
-                  <img src={img3} alt="image" />
-                </motion.div>
-                <motion.div
-                  className={styleHeader.img}
-                  variants={animateHeaderPagesImage}
-                >
-                  <img src={img4} alt="image" />
-                </motion.div>
-              </>
-            )}
-          </motion.div>
+              ) : (
+                <>
+                  <motion.div
+                    className={styleHeader.img}
+                    variants={animateHeaderPagesImage}
+                  >
+                    <img src={img1} alt="image" />
+                  </motion.div>
+                  <motion.div
+                    className={styleHeader.img}
+                    variants={animateHeaderPagesImage}
+                  >
+                    <img src={img2} alt="image" />
+                  </motion.div>
+                  <motion.div
+                    className={styleHeader.img}
+                    variants={animateHeaderPagesImage}
+                  >
+                    <img src={img3} alt="image" />
+                  </motion.div>
+                  <motion.div
+                    className={styleHeader.img}
+                    variants={animateHeaderPagesImage}
+                  >
+                    <img src={img4} alt="image" />
+                  </motion.div>
+                </>
+              )}
+            </motion.div>
+          ) : (
+            <h1>CHAT-BOX</h1>
+          )}
         </main>
       </div>
     </header>
