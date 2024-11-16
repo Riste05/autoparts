@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 import headerStyle from "./header.module.css";
-
-import { NavBar } from "./NavBar";
 import { SliderComponent } from "../custom/customSlider/SliderComponent";
 import { SwiperSlideComponent } from "../custom/customSlider/SwiperSlideComponent";
 
