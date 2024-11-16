@@ -27,7 +27,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  justify-content: space-around;
+  padding: 10px;
   background-color: var(--whitecol);
   border-radius: 5px;
   cursor: pointer;
