@@ -61,6 +61,10 @@
   width: 220px;
 }
 
+.img img {
+  width: 100%;
+}
+
 .img:nth-child(2) {
   position: relative;
   margin-left: -50px;
