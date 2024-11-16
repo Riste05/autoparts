@@ -56,7 +56,7 @@ export const CustomPageHeader = ({
             >
               {oneImage ? (
                 <motion.div
-                  className={!oneImage ? styleHeader.img : ""}
+                  className={!oneImage ? styleHeader.img : styleHeader.oneimage}
                   variants={animateHeaderPagesImage}
                 >
                   <img src={img1} alt="image" />

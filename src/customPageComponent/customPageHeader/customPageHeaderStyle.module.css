@@ -57,11 +57,16 @@
   align-items: center;
 }
 
-.img {
+.oneimage {
+  width: 100% ;
+}
+
+.img{
   width: 220px;
 }
 
-.img img {
+.img img,
+.oneimage img {
   width: 100%;
 }
 
