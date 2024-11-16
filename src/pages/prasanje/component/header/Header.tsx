@@ -1,4 +1,4 @@
-import { CustomPageHeader } from "../../../customPageComponent/customPageHeader/CustomPageHeader";
+import { CustomPageHeader } from "../../../../customPageComponent/customPageHeader/CustomPageHeader";
 
 import headerImage from "./image/question.jpg";
 
