@@ -1,15 +1,16 @@
-import airtex from "../pages/home/component/brend/image/AIRTEX.jpeg";
-import aisin from "../pages/home/component/brend/image/AISIN.jpeg";
-import bosch from "../pages/home/component/brend/image/Bosch.png";
-import vernet from "../pages/home/component/brend/image/CALORSTAT by Vernet.jpeg";
-import fag from "../pages/home/component/brend/image/FAG.jpeg";
-import hitachi from "../pages/home/component/brend/image/HITACHI.jpeg";
-import ina from "../pages/home/component/brend/image/Ina.png";
-import mann from "../pages/home/component/brend/image/MANN-FILTER.jpeg";
-import monroe from "../pages/home/component/brend/image/MONROE.jpeg";
-import skf from "../pages/home/component/brend/image/SKF.jpeg";
-import trw from "../pages/home/component/brend/image/TRW.jpeg";
-import valeo from "../pages/home/component/brend/image/VALEO.jpeg";
+import airtex from "../pages/home/component/brend/image/airtex.png";
+import aisin from "../pages/home/component/brend/image/aisin.png";
+import bosch from "../pages/home/component/brend/image/bosch.png";
+import vernet from "../pages/home/component/brend/image/vernet.png";
+import fag from "../pages/home/component/brend/image/fag.png";
+import hitachi from "../pages/home/component/brend/image/filtron.png";
+import ina from "../pages/home/component/brend/image/ina.png";
+import mann from "../pages/home/component/brend/image/mann.png";
+import monroe from "../pages/home/component/brend/image/monroe.png";
+import skf from "../pages/home/component/brend/image/skf.png";
+import trw from "../pages/home/component/brend/image/trw.png";
+import valeo from "../pages/home/component/brend/image/valeo.png";
+import luk from "../pages/home/component/brend/image/luk.png";
 
 const brendData = [
   {
@@ -59,6 +60,10 @@ const brendData = [
   {
     img: valeo,
     info: "Valeo",
+  },
+  {
+    img: luk,
+    info: "Luk",
   },
 ];
 

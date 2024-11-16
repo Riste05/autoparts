@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   inset: 0 0 0 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--transparent);
 }
 
 .banner img {
@@ -20,11 +20,15 @@
 }
 
 .banner p {
+  position: relative;
   font-size: 30px;
+  color: var(--whitecol);
+  z-index: 1;
 }
 
 .banner p span {
-  color: var(--redcolor);
+  font-weight: bold;
+  color: rgb(86, 2, 2);
 }
 
 @media only screen and (max-width: 380px) {

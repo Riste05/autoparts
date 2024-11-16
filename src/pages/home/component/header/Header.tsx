@@ -12,7 +12,6 @@ export const Header = () => {
   return (
     <header>
       <div className={headerStyle.container}>
-        <NavBar />
         <main className={headerStyle.main}>
           <SliderComponent slide={slide} />
           {/* SWIPER */}

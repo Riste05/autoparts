@@ -3,12 +3,14 @@
   max-width: 1700px;
   margin: 0 auto;
   padding: 50px 30px;
+  background-color: var(--transparent);
 }
 
 .text {
   text-align: center;
   margin-bottom: 50px;
   font-size: 50px;
+  color: var(--whitecol);
 }
 
 .swiper-container {

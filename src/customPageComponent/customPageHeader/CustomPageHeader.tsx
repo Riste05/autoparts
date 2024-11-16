@@ -8,11 +8,11 @@ import styleHeader from "./customPageHeaderStyle.module.css";
 
 type PageHeaderProps = {
   headerImage: string;
-  oneImage: boolean;
+  oneImage?: boolean;
   removeImage?: boolean;
   partsName: string;
-  text: string;
-  img1: string;
+  text?: string;
+  img1?: string;
   img2?: string;
   img3?: string;
   img4?: string;

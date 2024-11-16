@@ -1,5 +1,6 @@
 .section {
   padding: 50px;
+  background-color: var(--transparent);
 }
 
 .container {
@@ -12,6 +13,7 @@
   text-align: center;
   margin-bottom: 50px;
   font-size: 50px;
+  color: var(--whitecol);
 }
 
 .category {

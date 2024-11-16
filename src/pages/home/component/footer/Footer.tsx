@@ -1,5 +1,13 @@
 import footerStyle from "./footer.module.css";
 
 export const Footer = () => {
-  return <div className={footerStyle.footer}>Footer</div>;
+  return (
+    <footer>
+      <div className={footerStyle.container}>
+        <div className={footerStyle.image}>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </footer>
+  );
 };
