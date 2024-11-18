@@ -1,10 +1,17 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1700p;
+  max-width: 1700px;
   margin: 0 auto;
+
+  background-image: url("./image/footer_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.image img {
-  width: 100%;
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: var(--transparent);
 }
