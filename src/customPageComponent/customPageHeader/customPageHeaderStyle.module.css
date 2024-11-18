@@ -61,7 +61,8 @@
   width: 220px;
 }
 
-.img img {
+.img img,
+.one_image img {
   width: 100%;
 }
 
@@ -120,18 +121,18 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .content h1 {
+    margin-bottom: 20px;
+  }
+
   .images {
-    width: 80%;
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .content {
     padding: 15px;
-  }
-
-  .content h1 {
-    margin-bottom: 10px;
   }
 }
 

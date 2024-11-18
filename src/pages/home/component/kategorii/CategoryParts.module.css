@@ -1,5 +1,5 @@
 .section {
-  padding: 50px;
+  padding: 50px 20px;
   background-color: var(--transparent);
 }
 
@@ -18,13 +18,14 @@
 
 .category {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   margin-bottom: 15px;
 }
 
 .item {
   display: flex;
+  height: 325px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
