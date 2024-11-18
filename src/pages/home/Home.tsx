@@ -5,19 +5,17 @@ import { InfoText } from "./component/InfoText/InfoText";
 import { Brends } from "./component/brend/Brends";
 import { Banner } from "./component/banner/Banner";
 import { InfoPurchase } from "./component/infoPurchase/InfoPurchase";
-import { Footer } from "./component/footer/Footer";
 
 export const Home = () => {
   return (
     <>
       <Header />
       <InfoBar />
-      <CategoryParts />
+      <CategoryParts allCategory={false} />
       <InfoText />
       <Brends />
       <Banner />
       <InfoPurchase />
-      <Footer />
     </>
   );
 };

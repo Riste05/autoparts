@@ -5,6 +5,7 @@
   --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   --hover: rgba(255, 255, 255, 0.5);
   --textcolor: #000;
+  --spancolor: rgb(100, 149, 15);
 }
 
 @font-face {

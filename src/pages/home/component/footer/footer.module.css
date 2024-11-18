@@ -3,10 +3,16 @@
   width: 100%;
   max-width: 1700px;
   margin: 0 auto;
+  padding: 20px;
 
   background-image: url("./image/footer_img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+
+  display: flex;
+  gap: 100px;
+  align-items: center;
 }
 
 .container::before {
@@ -14,4 +20,56 @@
   position: absolute;
   inset: 0 0 0 0;
   background-color: var(--transparent);
+}
+
+.container > div {
+  position: relative;
+  width: 30%;
+  z-index: 1;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content p,
+.media p {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--whitecol);
+  font-size: 25px;
+}
+
+.content > p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content p span,
+.media p span {
+  color: var(--spancolor);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .container > div:not(:first-child) {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

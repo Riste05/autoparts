@@ -28,7 +28,7 @@
 
 .banner p span {
   font-weight: bold;
-  color: rgb(86, 2, 2);
+  color: var(--spancolor);
 }
 
 @media only screen and (max-width: 380px) {
