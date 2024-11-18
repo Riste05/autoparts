@@ -57,6 +57,10 @@
   align-items: center;
 }
 
+.oneimage {
+  width: 100%;
+}
+
 .img {
   width: 220px;
 }
