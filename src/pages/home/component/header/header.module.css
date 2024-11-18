@@ -17,6 +17,10 @@
   z-index: 10000;
 }
 
+.nav.active {
+  background-color: red;
+}
+
 .nav .logo {
   width: 200px;
 }
