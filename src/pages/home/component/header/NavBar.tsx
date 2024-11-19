@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import headerStyle from "../header/header.module.css";
 import logo from "../banner/image/bannerimg.png";
@@ -7,12 +7,18 @@ import logo from "../banner/image/bannerimg.png";
 export const NavBar = () => {
   const [changeColorNav, setChangeColorNav] = useState(false);
 
-  function changeColorNavBar() {
-    return window.scrollY > 350
-      ? setChangeColorNav(true)
-      : setChangeColorNav(false);
-  }
-  window.addEventListener("scroll", changeColorNavBar);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setChangeColorNav(true);
+      } else {
+        setChangeColorNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
