@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import categoryStyle from "../../../../home/component/kategorii/CategoryParts.module.css";
 
 type CustomComponentProps = {
@@ -17,10 +19,14 @@ export const CustomComponent = ({ data, title }: CustomComponentProps) => {
 
         <div className={categoryStyle.category}>
           {data.map((item) => (
-            <div className={categoryStyle.item} key={item.id}>
-              <img src={item.img} alt="image" />
-              <p>{item.name}</p>
-            </div>
+            <>
+              <Link to={`/maslo/${item.name}`}>
+                <div className={categoryStyle.item} key={item.id}>
+                  <img src={item.img} alt="image" />
+                  <p>{item.name}</p>
+                </div>
+              </Link>
+            </>
           ))}
         </div>
       </div>

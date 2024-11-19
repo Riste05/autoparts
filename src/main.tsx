@@ -11,6 +11,7 @@ import { Maslo } from "./pages/maslo/Maslo";
 import { Dostava } from "./pages/dostava/Dostava";
 import { Prasanje } from "./pages/prasanje/Prasanje";
 import { Kontakt } from "./pages/kontakt/Kontakt";
+import { CustomDetailsComponent } from "./pages/maslo/component/kategorii/custom/CustomDetailsComponent";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/delovi", element: <Delovi /> },
       { path: "/maslo", element: <Maslo /> },
+      { path: "/maslo/:masloID", element: <CustomDetailsComponent /> },
       { path: "/kontakt", element: <Kontakt /> },
       { path: "/dostava", element: <Dostava /> },
       { path: "/prasaj", element: <Prasanje /> },
