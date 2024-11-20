@@ -16,7 +16,7 @@ import liquiHeader from "../pages/maslo/component/kategorii/image/liquimoly-head
 import castrolHeader from "../pages/maslo/component/kategorii/image/castrol-header.jpg";
 import totalHeader from "../pages/maslo/component/kategorii/image/total-header.jpg";
 import shellHeader from "../pages/maslo/component/kategorii/image/shell-header.jpg";
-import eneosHeader from "../pages/maslo/component/kategorii/image/eneos-header.png";
+import eneosHeader from "../pages/maslo/component/kategorii/image/eneos-header.jpg";
 import febiHeader from "../pages/maslo/component/kategorii/image/febi-header.jpg";
 
 /////////////////////////////////////////
