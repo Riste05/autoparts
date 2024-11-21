@@ -28,6 +28,21 @@ import shellBottle from "../pages/maslo/component/kategorii/image/shell-bottle.p
 import eneosBottle from "../pages/maslo/component/kategorii/image/eneos-bottle.png";
 import febiBottle from "../pages/maslo/component/kategorii/image/febi-bottle.png";
 
+//////////////////////////////////////////
+
+import mannolHeader from "../pages/maslo/component/kategorii/image/mannol-header.jpg";
+import roweHeader from "../pages/maslo/component/kategorii/image/rowe-header.png";
+import dynamaxHeader from "../pages/maslo/component/kategorii/image/dynamax-header.jpg";
+import wurthHeader from "../pages/maslo/component/kategorii/image/wurth-header.jpg";
+
+//////////////////////////////////////
+
+import mannolBottle from "../pages/maslo/component/kategorii/image/mannol-bottle.png";
+import roweBottle from "../pages/maslo/component/kategorii/image/rowe-bottle.png";
+import dynamaxBottle from "../pages/maslo/component/kategorii/image/dynamx-bottle.png";
+import liquiBottleAditiv from "../pages/maslo/component/kategorii/image/liqui-bottle-aditiv.png";
+import wurthBottle from "../pages/maslo/component/kategorii/image/wurth-bottle.png";
+
 const maslo = {
   maslo: [
     {
@@ -78,26 +93,36 @@ const maslo = {
       id: "aditiv1",
       name: "Mannol",
       img: mannol,
+      headerImg: mannolHeader,
+      bottle: mannolBottle,
     },
     {
       id: "aditiv2",
       name: "Rowe",
       img: rowe,
+      headerImg: roweHeader,
+      bottle: roweBottle,
     },
     {
       id: "aditiv3",
       name: "Dynamax",
       img: dynamax,
+      headerImg: dynamaxHeader,
+      bottle: dynamaxBottle,
     },
     {
       id: "aditiv4",
-      name: "Liqui Moly",
+      name: "Liqui-Moly",
       img: liquimoly,
+      headerImg: liquiHeader,
+      bottle: liquiBottleAditiv,
     },
     {
       id: "aditiv5",
       name: "Wurth",
       img: wurth,
+      headerImg: wurthHeader,
+      bottle: wurthBottle,
     },
   ],
 };

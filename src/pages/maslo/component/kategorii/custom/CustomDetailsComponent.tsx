@@ -13,6 +13,18 @@ export const CustomDetailsComponent = () => {
         .filter((item) => item.name === params.masloID)
         .map((ele) => (
           <CustomPageHeader
+            key={ele.name}
+            headerImage={ele.headerImg}
+            partsName={ele.name}
+            oneImage
+            img1={ele.bottle}
+          />
+        ))}
+      {data.aditivi
+        .filter((item) => item.name === params.masloID)
+        .map((ele) => (
+          <CustomPageHeader
+            key={ele.name}
             headerImage={ele.headerImg}
             partsName={ele.name}
             oneImage

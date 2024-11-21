@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import { Link } from "react-router-dom";
 
 import categoryStyle from "../../../../home/component/kategorii/CategoryParts.module.css";
@@ -9,9 +11,14 @@ type CustomComponentProps = {
     img: string;
   }[];
   title: string;
+  masloPath?: boolean;
 };
 
-export const CustomComponent = ({ data, title }: CustomComponentProps) => {
+export const CustomComponent = ({
+  data,
+  title,
+  masloPath,
+}: CustomComponentProps) => {
   return (
     <section className={categoryStyle.section}>
       <div className={categoryStyle.container}>
@@ -19,14 +26,20 @@ export const CustomComponent = ({ data, title }: CustomComponentProps) => {
 
         <div className={categoryStyle.category}>
           {data.map((item) => (
-            <>
-              <Link to={`/maslo/${item.name}`}>
-                <div className={categoryStyle.item} key={item.id}>
+            <Fragment key={item.id}>
+              <Link
+                to={
+                  masloPath
+                    ? `/maslo/${item.name}`
+                    : `/maslo/aditiv/${item.name}`
+                }
+              >
+                <div className={categoryStyle.item}>
                   <img src={item.img} alt="image" />
                   <p>{item.name}</p>
                 </div>
               </Link>
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

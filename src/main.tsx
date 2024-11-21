@@ -22,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/delovi", element: <Delovi /> },
       { path: "/maslo", element: <Maslo /> },
       { path: "/maslo/:masloID", element: <CustomDetailsComponent /> },
+      { path: "/maslo/aditiv/:masloID", element: <CustomDetailsComponent /> },
       { path: "/kontakt", element: <Kontakt /> },
       { path: "/dostava", element: <Dostava /> },
       { path: "/prasaj", element: <Prasanje /> },
