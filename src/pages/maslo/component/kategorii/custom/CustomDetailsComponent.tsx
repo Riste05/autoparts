@@ -18,6 +18,7 @@ export const CustomDetailsComponent = () => {
             partsName={ele.name}
             oneImage
             img1={ele.bottle}
+            text={ele.text}
           />
         ))}
       {data.aditivi
@@ -29,6 +30,7 @@ export const CustomDetailsComponent = () => {
             partsName={ele.name}
             oneImage
             img1={ele.bottle}
+            text={ele.text}
           />
         ))}
     </>
