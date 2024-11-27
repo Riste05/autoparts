@@ -43,6 +43,15 @@ import dynamaxBottle from "../pages/maslo/component/kategorii/image/dynamx-bottl
 import liquiBottleAditiv from "../pages/maslo/component/kategorii/image/liqui-bottle-aditiv.png";
 import wurthBottle from "../pages/maslo/component/kategorii/image/wurth-bottle.png";
 
+//////////////////////////////////////////////////////
+
+import tq5w401l from "../pages/maslo/component/kategorii/image/card-image/tq5w401L.png";
+import tq5w405l from "../pages/maslo/component/kategorii/image/card-image/tq5w405L.png";
+import tq10w401l from "../pages/maslo/component/kategorii/image/card-image/tq10w401L.png";
+import tq10w405l from "../pages/maslo/component/kategorii/image/card-image/tq10w405l.png";
+import tq5w301l from "../pages/maslo/component/kategorii/image/card-image/tq5w301l.png";
+import tq5w305l from "../pages/maslo/component/kategorii/image/card-image/tq5w305l.png";
+
 const maslo = {
   maslo: [
     {
@@ -68,6 +77,44 @@ const maslo = {
       headerImg: totalHeader,
       bottle: totalBottle,
       text: "TotalEnergies SE е француска мултинационална интегрирана енергетска и нафтена компанија основана во 1924 година и е една од седумте големи нафтени компании.Нејзините бизниси го покриваат целиот синџир на нафта и гас, од истражување и производство на сурова нафта и природен гас до производство на електрична енергија.",
+      tipovi: [
+        {
+          id: "tq1",
+          img: tq5w401l,
+          tip: "9000 5W40 1L",
+          cena: "1000",
+        },
+        {
+          id: "tq2",
+          img: tq5w405l,
+          tip: "9000 5W40 5L",
+          cena: "1000",
+        },
+        {
+          id: "tq3",
+          img: tq10w401l,
+          tip: "7000 10W40 1L",
+          cena: "1000",
+        },
+        {
+          id: "tq4",
+          img: tq10w405l,
+          tip: "7000 10W40 5L",
+          cena: "1000",
+        },
+        {
+          id: "tq5",
+          img: tq5w301l,
+          tip: "INEO 5W30 1L",
+          cena: "1000",
+        },
+        {
+          id: "tq6",
+          img: tq5w305l,
+          tip: "INEO 5W30 5L",
+          cena: "1000",
+        },
+      ],
     },
     {
       id: "maslo4",
@@ -117,6 +164,7 @@ const maslo = {
       img: dynamax,
       headerImg: dynamaxHeader,
       bottle: dynamaxBottle,
+      text: "Адитивите за дизел и бензин што DYNAMAX ги носи на автомобилскиот пазар обезбедуваат непречено работење на моторот, неопходна заштита на сите елементи на системот и, како бонус, можат позитивно да влијаат на стартните карактеристики на возилото.",
     },
     {
       id: "aditiv4",
@@ -132,6 +180,7 @@ const maslo = {
       img: wurth,
       headerImg: wurthHeader,
       bottle: wurthBottle,
+      text: "Würth Group е лидер на глобалниот пазар во развојот, производството и продажбата на материјали за прицврстување и склопување. Повеќе од 400 компании кои работат преку 2.700 филијали и продавници во 80 земји се дел од овој глобален семеен бизнис, кој потекнува од германскиот град Кунзелсау.",
     },
   ],
 };
