@@ -12,11 +12,13 @@ import { Dostava } from "./pages/dostava/Dostava";
 import { Prasanje } from "./pages/prasanje/Prasanje";
 import { Kontakt } from "./pages/kontakt/Kontakt";
 import { CustomDetailsComponent } from "./pages/maslo/component/kategorii/custom/CustomDetailsComponent";
+import { ErrorPage } from "./pages/error/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
       { path: "/delovi", element: <Delovi /> },

@@ -1,0 +1,29 @@
+.container {
+  max-width: 1700px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--transparent);
+  color: var(--whitecol);
+}
+
+.container h1 {
+  font-size: 60px;
+}
+
+.container h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.container p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 940px) {
+  .home a img {
+    width: 100%;
+  }
+}
