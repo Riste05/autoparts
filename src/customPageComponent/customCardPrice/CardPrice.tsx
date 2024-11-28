@@ -13,6 +13,7 @@ export const CardPrice = ({ data }: PriceProps) => {
   return (
     <section>
       <div className={cardPriceStyle.container}>
+        <h1 className={cardPriceStyle["header-text"]}>Моторно Масло</h1>
         <div className={cardPriceStyle.category}>
           {data.map((item) => (
             <div className={cardPriceStyle.item} key={item.id}>
