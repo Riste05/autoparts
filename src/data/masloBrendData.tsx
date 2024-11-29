@@ -205,6 +205,56 @@ const maslo = {
       headerImg: "/src/pages/maslo/component/kategorii/image/eneos-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/eneos-bottle.png",
       text: "Eneos Corporation е јапонска нафтена компанија. Нејзините бизниси вклучуваат истражување, увоз и рафинирање на сурова нафта, производство и продажба на нафтени продукти, вклучувајќи горива и мазива. Таа е најголемата нафтена компанија во Јапонија, а во последните години ги проширува своите операции и во други земји.",
+      tipovi: [
+        {
+          id: "eneos1",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos10w401L.png",
+          tip: "Pro 10w40 1L",
+          cena: "1000",
+        },
+        {
+          id: "eneos2",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos10w404L.png",
+          tip: "Pro 10w40 4L",
+          cena: "1000",
+        },
+        {
+          id: "eneos3",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w401L.png",
+          tip: "Hyper 5w40 1L",
+          cena: "1000",
+        },
+        {
+          id: "eneos4",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w404L.png",
+          tip: "Hyper 5w40 4L",
+          cena: "1000",
+        },
+        {
+          id: "eneos5",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w301L.png",
+          tip: "Sustina 5w30 1L",
+          cena: "1000",
+        },
+        {
+          id: "eneos6",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w304L.png",
+          tip: "Sustina 5w30 4L",
+          cena: "1000",
+        },
+        {
+          id: "eneos7",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w40s1L.png",
+          tip: "Sustina 5w40 1L",
+          cena: "1000",
+        },
+        {
+          id: "eneos8",
+          img: "/src/pages/maslo/component/kategorii/image/card-image/eneos5w40s4L.png",
+          tip: "Sustina 5w40 4L",
+          cena: "1000",
+        },
+      ],
     },
     {
       id: "maslo6",

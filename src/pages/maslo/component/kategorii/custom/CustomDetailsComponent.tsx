@@ -1,3 +1,5 @@
+import { Fragment } from "react/jsx-runtime";
+
 import { useParams } from "react-router-dom";
 
 import { CustomPageHeader } from "../../../../../customPageComponent/customPageHeader/CustomPageHeader";
@@ -13,7 +15,7 @@ export const CustomDetailsComponent = () => {
       {data.maslo
         .filter((item) => item.name === params.masloID)
         .map((ele) => (
-          <>
+          <Fragment key={ele.id}>
             <CustomPageHeader
               key={ele.name}
               headerImage={ele.headerImg}
@@ -23,7 +25,7 @@ export const CustomDetailsComponent = () => {
               text={ele.text}
             />
             <CardPrice data={ele.tipovi} />
-          </>
+          </Fragment>
         ))}
       {data.aditivi
         .filter((item) => item.name === params.masloID)
