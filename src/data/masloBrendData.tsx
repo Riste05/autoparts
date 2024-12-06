@@ -263,6 +263,7 @@ const maslo = {
       headerImg: "/src/pages/maslo/component/kategorii/image/febi-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/febi-bottle.png",
       text: "bilstein group е седма генерација, семејна група на компании со седиште во Енепетал, Германија. Покривајќи европски и азиски автомобили, лесни комерцијални возила и камиони, febi има се што ви треба, секогаш кога ви е потребно. Висококвалитетни течности се од суштинско значење за непреченото функционирање на возилото.",
+      tipovi: [],
     },
   ],
   aditivi: [

@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
@@ -13,6 +13,8 @@ import { Prasanje } from "./pages/prasanje/Prasanje";
 import { Kontakt } from "./pages/kontakt/Kontakt";
 import { CustomDetailsComponent } from "./pages/maslo/component/kategorii/custom/CustomDetailsComponent";
 import { ErrorPage } from "./pages/error/ErrorPage";
+
+import { Loader } from "./UI/Loader";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={router} />
+    </Suspense>
   </StrictMode>
 );
