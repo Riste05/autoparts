@@ -1,9 +1,16 @@
+import liquiMoly from "../pages/maslo/component/kategorii/image/liquimoly.png";
+import castrol from "../pages/maslo/component/kategorii/image/castrol.png";
+import total from "../pages/maslo/component/kategorii/image/total.png";
+import shell from "../pages/maslo/component/kategorii/image/shell.png";
+import eneos from "../pages/maslo/component/kategorii/image/eneos.png";
+import febi from "../pages/maslo/component/kategorii/image/febi.png";
+
 const maslo = {
   maslo: [
     {
       id: "maslo1",
       name: "Liqui Moly",
-      img: "/src/pages/maslo/component/kategorii/image/liquimoly.png",
+      img: liquiMoly,
       headerImg:
         "/src/pages/maslo/component/kategorii/image/liquimoly-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/liqui-bottle.png",
@@ -50,7 +57,7 @@ const maslo = {
     {
       id: "maslo2",
       name: "Castrol",
-      img: "/src/pages/maslo/component/kategorii/image/castrol.png",
+      img: castrol,
       headerImg:
         "/src/pages/maslo/component/kategorii/image/castrol-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/castrol-bottle.png",
@@ -109,7 +116,7 @@ const maslo = {
     {
       id: "maslo3",
       name: "Total Quartz",
-      img: "/src/pages/maslo/component/kategorii/image/total.png",
+      img: total,
       headerImg: "/src/pages/maslo/component/kategorii/image/total-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/total-bottle.png",
       text: "TotalEnergies SE е француска мултинационална интегрирана енергетска и нафтена компанија основана во 1924 година и е една од седумте големи нафтени компании.Нејзините бизниси го покриваат целиот синџир на нафта и гас, од истражување и производство на сурова нафта и природен гас до производство на електрична енергија.",
@@ -155,7 +162,7 @@ const maslo = {
     {
       id: "maslo4",
       name: "Shell",
-      img: "/src/pages/maslo/component/kategorii/image/shell.png",
+      img: shell,
       headerImg: "/src/pages/maslo/component/kategorii/image/shell-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/shell-bottle.png",
       text: "Shell plc е британска мултинационална компанија за нафта и гас со седиште во Лондон, Англија. Shell е втората најголема компанија за нафта и гас во светот. Shell работи во над 99 земји и  произведува околу 3,7 милиони барели еквивалент нафта дневно.Shell е вертикално интегрирана и е активна во секоја област на нафтената и гасната индустрија, ",
@@ -201,7 +208,7 @@ const maslo = {
     {
       id: "maslo5",
       name: "Eneos",
-      img: "/src/pages/maslo/component/kategorii/image/eneos.png",
+      img: eneos,
       headerImg: "/src/pages/maslo/component/kategorii/image/eneos-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/eneos-bottle.png",
       text: "Eneos Corporation е јапонска нафтена компанија. Нејзините бизниси вклучуваат истражување, увоз и рафинирање на сурова нафта, производство и продажба на нафтени продукти, вклучувајќи горива и мазива. Таа е најголемата нафтена компанија во Јапонија, а во последните години ги проширува своите операции и во други земји.",
@@ -259,7 +266,7 @@ const maslo = {
     {
       id: "maslo6",
       name: "Febi Bilsten",
-      img: "/src/pages/maslo/component/kategorii/image/febi.png",
+      img: febi,
       headerImg: "/src/pages/maslo/component/kategorii/image/febi-header.jpg",
       bottle: "/src/pages/maslo/component/kategorii/image/febi-bottle.png",
       text: "bilstein group е седма генерација, семејна група на компании со седиште во Енепетал, Германија. Покривајќи европски и азиски автомобили, лесни комерцијални возила и камиони, febi има се што ви треба, секогаш кога ви е потребно. Висококвалитетни течности се од суштинско значење за непреченото функционирање на возилото.",
